@@ -50,9 +50,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0e1d7;
+  background-color: rgb(240, 225, 215);
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.95;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -67,7 +67,7 @@ img {
 }
 
 .navbar a:hover {
-  border-bottom: #4fb6d9 2px solid;
+  border-bottom: rgb(79, 182, 217) 2px solid;
 }
 
 .navbar ul {
@@ -77,4 +77,48 @@ img {
 .navbar .logo {
   font-family: "Comfortaa", sans-serif;
   font-weight: 400;
+}
+
+/* Header */
+.hero {
+  background: url("../image/home/pexels-luciann-photography-3566187.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  /* opacity: 0.5; */
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(79, 182, 217, 0.6);
+}
+
+.hero * {
+  z-index: 10;
 }
