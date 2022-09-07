@@ -116,9 +116,42 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(79, 182, 217, 0.6);
+  /* background: rgba(79, 182, 217, 0.6); */
+
+  background: radial-gradient(
+    circle,
+    rgba(13, 70, 89, 0.6) 20%,
+    rgba(79, 182, 217, 0.6) 80%
+  );
 }
 
 .hero * {
   z-index: 10;
 }
+
+/* Icons */
+
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #4fb6d9;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cases img:hover {
+  opacity: 0.7;
+}
+
+/* .flex-grid .column img {
+  height: unset;
+} */
